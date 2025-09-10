@@ -3,11 +3,11 @@
 sudo apt update
 sudo apt install rclone -y
 
-## On laptop:
+## On Linux CLI (laptop):
 
 rclone authorize "dropbox"
 
-# Follow website link -- copy and paste
+# Follow website link -- copy and paste token
 
 ## On CLoudCIX VM:
 
