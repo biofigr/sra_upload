@@ -41,8 +41,25 @@ rclone copy dropbox:dropbox/path/to/fastq/ ~/CloudCIX/path/for/fastq/ --progress
 
 ## FTP in folder with fastq files
 
+# Log into NCBI and move to FTP submission page for details as these change
+
 sudo apt install lftp -y
 
+# FTP is slow and clunky, but more stable than ascp
 
+lftp -u subftp,'PASSWORD' ftp-private.ncbi.nlm.nih.gov
+cd uploads/xxxxxx_xxxxxxx
+
+## Monitor on Filezilla GUI:
+
+Protocol: FTP - File Transfer Protocol
+Encryption: Use plain FTP (instead of Require explicit FTP over TLS)
+Host: ftp-private.ncbi.nlm.nih.gov
+Port: 21
+User: subftp
+Password: PASSWORD
+Connec
+
+Then cd uploads/#####_#####
 
 
