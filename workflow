@@ -50,6 +50,11 @@ sudo apt install lftp -y
 lftp -u subftp,'PASSWORD' ftp-private.ncbi.nlm.nih.gov
 cd uploads/xxxxxx_xxxxxxx
 
+mkdir <project_upload_dir>
+cd project_upload_dir
+
+mput /dropbox/path/with/fastq/*.gz
+
 ## Monitor on Filezilla GUI:
 
 Protocol: FTP - File Transfer Protocol
