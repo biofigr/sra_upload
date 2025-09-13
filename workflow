@@ -2,13 +2,13 @@
 
 # Make a dropbox directory for client data, then stop it from syncing:
 
-mkdir ~/data/fastq/
-dropbox exclude add ~/data/fastq/
+mkdir ~/Dropbox/project/data/fastq/
+dropbox exclude add ~/Dropbox/project/data/fastq/
 
 sudo apt update
 sudo apt install rclone -y
 
-## On Linux CLI (ie laptop):
+## On CLI (eg Ubuntu laptop):
 
 rclone authorize "dropbox"
 
@@ -66,5 +66,4 @@ Password: PASSWORD
 Connec
 
 Then cd uploads/#####_#####
-
 
